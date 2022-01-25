@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+.navbar {
+  background: white;
+}
+
+.dot {
+  color: rgba(29, 146, 255, 0.6);
+}
+
+.main {
+  position: relative;
+  margin: 0 auto;
+}
+
+.main-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("../images/furniture.jpg");
+  width: auto;
+  height: 600px;
+  background-size: cover;
+}
+
+.head_size {
+  font-size: 30px;
+}
+
+.text-black {
+  color: black;
+}
+
+.btn-primary,
+.btn-outline-primary {
+  background: black;
+  border-radius: 0px;
+  border: 1px solid rgba(29, 146, 255);
+}
+
+.modal-content {
+  border: 0px;
+  border-radius: 0px;
+}
+
+.main-btn {
+  background: transparent;
+  transition-property: background, color, border;
+  border: 1px solid rgba(29, 146, 255);
+  transition-timing-function: linear;
+}
+
+.main-btn:hover {
+  background: rgba(29, 146, 255);
+}
+
+.main-head-main {
+  padding: 0px 20px 0px 20px;
+  transition-property: color, border-left, border-right;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.main-head-main:hover {
+  color: rgba(29, 146, 255, 0.6);
+  border-left: none;
+  border-right: none;
+}
+
+.main-head {
+  padding: 0px 20px 0px 20px;
+  border-right: 5px solid rgba(29, 146, 255, 0.2);
+  border-left: 5px solid rgba(29, 146, 255, 0.2);
+  transition-property: color, border-left, border-right;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.main-head:hover {
+  color: rgba(29, 146, 255, 0.2);
+  border-left: none;
+  border-right: none;
+}
+
+.main-img {
+  width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+
+.imgbox {
+  display: grid;
+  height: 100%;
+}
+.main-con {
+  position: absolute;
+  bottom: 30%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8));
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+.custom-card {
+  border-radius: 0;
+  box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.main-text-para {
+  text-align: center;
+  font-size: 60px;
+}
+
+.main-text-innerpara {
+  text-align: center;
+}
+
+.form-control {
+  border: 0px;
+  border-radius: 0px;
+  border-bottom: 2px solid lightgray;
+}
+
+.form-control:focus {
+  background: transparent;
+  border-color: none;
+  box-shadow: none;
+  border-bottom: 2px solid rgba(29, 146, 255, 0.6);
+}
+
+@media screen and (max-width: 992px) {
+  .card:hover {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .main-text-para {
+    font-size: 35px;
+  }
+  .main-img {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .main-text-para {
+    font-size: 25px;
+  }
+  .main-con {
+    bottom: 0;
+  }
+  .main-img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .main-head {
+    padding: 0px;
+    border-right: 0px;
+    border-left: 0px;
+  }
+}
+.bg-lightgray {
+  background: lightgray;
+}
+
+/* Animation for icon */
+#women {
+  animation: swing 1s infinite linear alternate;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+@keyframes swing {
+  from {
+    transform: rotateZ(-20deg);
+  }
+  to {
+    transform: rotateZ(20deg);
+  }
+}
+
+/* Animation ends here*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(29, 146, 255, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* All new styling */
+.best-services,
+.luxury-room,
+.great-time,
+.relax-enjoy,
+.client-review,
+.hotel-stat {
+  padding: 50px 10px 50px 10px;
+}
+
+.best-place {
+  padding: 50px 0px 50px 0px;
+}
+.best-service-para {
+  padding: 20px 0px 20px 0px;
+}
+
+.best-place,
+.great-time,
+.client-review {
+  background: rgba(211, 211, 211, 0.3);
+}
+
+.light-btn {
+  background: rgba(29, 146, 255, 0.2);
+  border-radius: 0px;
+  color: black;
+  border: none;
+}
+
+.light-btn:hover {
+  background: rgba(29, 146, 255);
+}
+
+.lx-row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.luxury-head {
+  padding: 50px 0px 50px 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.box {
+  height: 200px;
+  width: auto;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.count {
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.box-name {
+  font-size: 20px;
+}
+
+footer {
+  padding: 50px 0px 50px 0px;
+  background: rgba(29, 146, 255, 0.1);
+}
+
+.footer_para {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.head_size_footer {
+  font-size: 30px;
+}
+
+.footer-row {
+  margin-left: 0px;
+}
+
+.landing_PopupWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+  /*opacity: 0; */
+  display: none;
+}
+.landing_PopupWrapper.popUp_zoomIn {
+  display: flex;
+}
+.landing_Popup img {
+  width: 89%;
+  margin: auto !important;
+  float: none;
+  max-width: 90%;
+}
+.landing_Popup {
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+  width: 700px;
+}
+.imgforPopup {
+  max-width: 90%;
+  display: block;
+}
+.landing_Popup .popUpClose {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 49px;
+  background: url(https://res.cloudinary.com/simplotel/image/upload/v1495518454/close_icon.png)
+    no-repeat;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background-color: rgba(128, 128, 128, 0.4);
+}
+@keyframes zoominoutsinglefeatured {
+  0% {
+    transform: scale(0.3, 0.3);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.for-homepage .landing_Popup {
+  animation: zoominoutsinglefeatured 1s ease-in-out;
+}
